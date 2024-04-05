@@ -1,9 +1,11 @@
 package;
 
 // Importações Úteis
-import javafx.graphics.application.*;
-import javafx.stage.*;
-import javafx.scene.*;
+import javafx.application.Application;
+import javafx.stage.Group;
+import javafx.stage.Stage;
+import javafx.scene.paint.Color;
+import javafx.scene.Scene;
 
 // Direitos Autorais:
 // @MegaGamer69(Criador do Código Fonte)
