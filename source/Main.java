@@ -1,5 +1,3 @@
-package;
-
 // Importações Úteis
 import javafx.application.Application;
 import javafx.scene.Group;
@@ -18,10 +16,16 @@ public class Main extends Application
     // a Função Inicial
     public void start(Stage stage)
     {
+        // Chama a Função Inicial da Superclasse
+        super.start();
+        
 		// Variaveis Locais Úteis
     	Group root = new Group();
     	Scene scene = new Scene(root, 200, 200);
-		scene.setFill(Color.BLACK);
+        Color color = new Color();
+
+        // Altere a Cor da Cena
+		scene.setFill(color.BLACK);
 
 		// Defina o Estágio e a Cena
 		stage.setScene(scene);
