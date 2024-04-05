@@ -12,7 +12,16 @@ public class Main extends Application
     // a Função Inicial
     public void start(Stage stage)
     {
-        Group root = new Group();
-        Scene scene = new Scene(200, 200);
+		// Variaveis Locais Úteis
+    	Group root = new Group();
+    	Scene scene = new Scene(root, 200, 200);
+		scene.colorFill(Color.BLACK);
     }
+
+	// a Função Principal
+	private static void main(String[] args)
+	{
+		// Lance a Aplicação com Argumentos
+		Application.launch(args);
+	}
 }
