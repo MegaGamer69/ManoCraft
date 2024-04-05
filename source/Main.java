@@ -2,7 +2,7 @@ package;
 
 // Importações Úteis
 import javafx.application.Application;
-import javafx.stage.Group;
+import javafx.scene.Group;
 import javafx.stage.Stage;
 import javafx.scene.paint.Color;
 import javafx.scene.Scene;
