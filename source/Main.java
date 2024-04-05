@@ -17,15 +17,14 @@ public class Main extends Application
     public void start(Stage stage)
     {
         // Chama a Função Inicial da Superclasse
-        super.start();
+        super.start(stage);
         
 		// Variaveis Locais Úteis
     	Group root = new Group();
     	Scene scene = new Scene(root, 200, 200);
-        Color color = new Color();
-
+        
         // Altere a Cor da Cena
-		scene.setFill(color.BLACK);
+		scene.setFill(Color.BLACK);
 
 		// Defina o Estágio e a Cena
 		stage.setScene(scene);
