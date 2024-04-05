@@ -21,10 +21,10 @@ public class Main extends Application
 		// Variaveis Locais Úteis
     	Group root = new Group();
     	Scene scene = new Scene(root, 200, 200);
-		scene.colorFill(Color.BLACK);
+		scene.setFill(Color.BLACK);
 
 		// Defina o Estágio e a Cena
-		scene.setStage(stage);
+		stage.setScene(scene);
 		stage.show();
     }
 
