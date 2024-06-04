@@ -3,25 +3,22 @@ name: Compile JAR
 on: workflow_dispatch
 
 jobs:
-  build:
-	runs-on: ubuntu-latest
-	
-	steps:
-	- name: Checkout Repo
-	  uses: actions/checkout@v2
-	
-	- name: Set up JDK
-	  uses: actions/setup-java@v2
-	  with:
-	    java-version: "11"
-	
-	- name: Build JAR
-	  run: |
-	   javac source/Main.java
-  	   jar cfm ManoCraft.jar Manifest.txt *.class
-	   
-	- name: Upload Artifact
-	  uses: actions/upload-artifact@v2
-	  with:
-		  name: Atifact
-		  path: ./ManoCraft.jar
+	build:
+ 		name: Build
+		runs-on: ubuntu-latest
+    
+		steps:
+			- uses: actions/checkout@v4
+	 		- name: Setup JDK
+			  uses: actions/setup-java@v2
+			  with:
+			    java-version: "11"
+			- name: Build JAR
+			  run: |
+			   javac source/Main.java
+  			 jar cfm ManoCraft.jar Manifest.txt *.class
+			- name: Upload Artifact
+			  uses: actions/upload-artifact@v2
+			  with:
+				  name: Artifact
+		  		path: ./ManoCraft.jar
