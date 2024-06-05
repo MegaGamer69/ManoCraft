@@ -9,7 +9,7 @@ import static org.lwjgl.opengl.GL11.*;
 import static org.lwjgl.system.MemoryStack.*;
 import static org.lwjgl.system.MemoryUtil.*;
 
-import Block;
+import Block.*;
 
 // Direitos Autorais:
 // @MegaGamer69(Criador do Código Fonte)
