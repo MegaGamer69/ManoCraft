@@ -17,8 +17,9 @@ jobs:
           distribution: "temurin"
       - name: Build JAR
         run: |
-          javac source/Main.java
-          jar cfm ManoCraft.jar Manifest.txt Main.class
+          cd source
+          javac Main.java
+          jar cfm ManoCraft.jar Manifest.txt Main
       - name: Upload Artifact
         uses: actions/upload-artifact@v4.3.3
         with:
