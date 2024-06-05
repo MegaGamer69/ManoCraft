@@ -18,7 +18,7 @@ jobs:
       - name: Build JAR
         run: |
           javac source/Main.java
-          jar cfm ManoCraft.jar Manifest.txt *.class
+          jar cfm ManoCraft.jar Manifest.txt Main.class
       - name: Upload Artifact
         uses: actions/upload-artifact@v4.3.3
         with:
