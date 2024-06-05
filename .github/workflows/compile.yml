@@ -19,9 +19,8 @@ jobs:
         run: |
           cd source
           javac Main.java
-          jar cfm ManoCraft.jar Manifest.txt Main
       - name: Upload Artifact
         uses: actions/upload-artifact@v4.3.3
         with:
           name: Artifact
-          path: ./ManoCraft.jar
+          path: .
