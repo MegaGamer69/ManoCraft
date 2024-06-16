@@ -1,3 +1,6 @@
+// Pacote do Código
+package com.manocraft;
+
 // Direitos Autorais:
 // @MegaGamer69(Criador do Código Fonte)
 // 2024 ManoCraft
