@@ -96,5 +96,5 @@ dependencies {
 }
 
 application {
-	mainClassName = "manocraft.Main"
+	mainClassName = "com.manocraft.Main"
 }
