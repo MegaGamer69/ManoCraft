@@ -57,8 +57,29 @@ public class Main
         }
 
         // Configure o GLFW
-        glfwWindowHint(GLFW_FULLSCREEN, GLFW_TRUE);
+        glfwWindowHint(GLFW_DECORATED, GLFW_TRUE);
         glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
+
+        // Cria uma Janela
+        window = glfwCreateWindow(800, 600, "ManoCraft", NULL, NULL);
+
+        // Verifique se a Janela foi Criada
+        if(window == NULL)
+        {
+            throw new RuntimeException("Não foi Possivel Criar a Janela");
+        }
+
+        // Torne o Contexto do OpenGL Atual
+        glfwMakeContextCurrent(window);
+
+        // Habilita a Sincronização Vertical
+        glfwSwapInterval(1);
+
+        // Torne a Janela Vísivel
+        glfwShowWindow(window);
+
+        // Inicia o OpenGL
+        GL.createCapabilities();
     }
 
     // Chamado para Repetir Ações
