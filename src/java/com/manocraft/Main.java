@@ -11,6 +11,9 @@ import org.lwjgl.glfw.*;
 import org.lwjgl.opengl.*;
 import org.lwjgl.system.*;
 
+// Importações do Java Úteis
+import java.nio.*;
+
 // Importações Estáticas Úteis
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.glfw.Callbacks.*;
@@ -27,6 +30,36 @@ public class Main
     // Chamado quando a Aplicação é Executada
     public void run()
     {
-        // não tem Nada para Fazer, por Enquanto...
+        // Inicializa o Jogo
+        init();
+        loop();
+        
+        // Libera a Callback de Janela e Desintegra-a
+        glfwFreeCallbacks(window);
+        glfwDestroyWindow(window);
+
+        // Termina o GLFW e Libera a Callback de Erro
+        glfwTerminate();
+        glfwSetErrorCallback(null).free();
+    }
+
+    // Chamado para Iniciar Ações
+    public void init()
+    {
+        // Defina a Callback de Erro
+        GLFWErrorCallback.createPrint(System.err).set();
+
+        // Verifica se a Inicialização do GLFW Funcionou ou não
+        if(!glfwInit)
+        {
+            // Lance uma Excessão se não Funcionou
+            throw new illegalStateException("não é Possivel Inicializar o GLFW");
+        }
+    }
+
+    // Chamado para Repetir Ações
+    public void loop()
+    {
+        // Vazio por Enquanto...
     }
 }
