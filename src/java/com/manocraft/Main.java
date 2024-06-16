@@ -53,8 +53,12 @@ public class Main
         if(!glfwInit)
         {
             // Lance uma Excessão se não Funcionou
-            throw new illegalStateException("não é Possivel Inicializar o GLFW");
+            throw new IllegalStateException("não é Possivel Inicializar o GLFW");
         }
+
+        // Configure o GLFW
+        glfwWindowHint(GLFW_FULLSCREEN, GLFW_TRUE);
+        glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
     }
 
     // Chamado para Repetir Ações
