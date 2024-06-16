@@ -94,3 +94,7 @@ dependencies {
 	runtimeOnly "org.lwjgl:lwjgl-yoga::$lwjglNatives"
 	runtimeOnly "org.lwjgl:lwjgl-zstd::$lwjglNatives"
 }
+
+application {
+	mainClassName = "manocraft.Main"
+}
