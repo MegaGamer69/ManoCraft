@@ -5,13 +5,13 @@ package com.manocraft;
 // @MegaGamer69(Criador do Código Fonte)
 // 2024 ManoCraft
 
-// Importações Úteis
+// Importações Concretas Úteis
 import org.lwjgl.*;
 import org.lwjgl.glfw.*;
 import org.lwjgl.opengl.*;
 import org.lwjgl.system.*;
 
-// Importações do Java Úteis
+// Importações Concretas do Java Úteis
 import java.nio.*;
 
 // Importações Estáticas Úteis
@@ -50,7 +50,7 @@ public class Main
         GLFWErrorCallback.createPrint(System.err).set();
 
         // Verifica se a Inicialização do GLFW Funcionou ou não
-        if(!glfwInit)
+        if(!glfwInit())
         {
             // Lance uma Excessão se não Funcionou
             throw new IllegalStateException("não é Possivel Inicializar o GLFW");
