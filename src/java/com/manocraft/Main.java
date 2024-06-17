@@ -5,16 +5,16 @@ package com.manocraft;
 // @MegaGamer69(Criador do Código Fonte)
 // 2024 ManoCraft
 
-// Importações Concretas Úteis
+// Importações Concretas Úteis do LWJGL
 import org.lwjgl.*;
 import org.lwjgl.glfw.*;
 import org.lwjgl.opengl.*;
 import org.lwjgl.system.*;
 
-// Importações Concretas do Java Úteis
+// Importações Concretas Úteis do Java
 import java.nio.*;
 
-// Importações Estáticas Úteis
+// Importações Estáticas Úteis do LWJGL
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.glfw.Callbacks.*;
 import static org.lwjgl.opengl.GL11.*;
