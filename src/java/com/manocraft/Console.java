@@ -47,6 +47,9 @@ public class Console
     {
         // Imprima a Mensagem
         System.out.print(message);
+
+        // Coloque a Mensagem no Histórico
+        MessageHistory.add(message);
         
         // Esvazie a Entrada de Comando
         this.command = "Console/> ";
