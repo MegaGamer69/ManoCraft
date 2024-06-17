@@ -87,4 +87,14 @@ public class Main
     {
         // Vazio por Enquanto...
     }
+
+    // Função Estática para Ações Iniciais
+    public static void main()
+    {
+        // Váriavel Principal para Chamar
+        Main main = new Main();
+
+        // Chame a Função de Execução
+        main.run();
+    }
 }
