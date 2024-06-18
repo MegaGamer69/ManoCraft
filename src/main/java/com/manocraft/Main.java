@@ -37,47 +37,47 @@ public class Main
         // Libera a Callback de Janela e Desintegra-a
         glfwFreeCallbacks(window);
         glfwDestroyWindow(window);
-
+    
         // Termina o GLFW e Libera a Callback de Erro
         glfwTerminate();
         glfwSetErrorCallback(null).free();
     }
-
+    
     // Chamado para Iniciar Ações
     public void init()
     {
         // Defina a Callback de Erro
         GLFWErrorCallback.createPrint(System.err).set();
-
+        
         // Verifica se a Inicialização do GLFW Funcionou ou não
         if(!glfwInit())
         {
             // Lance uma Excessão se não Funcionou
             throw new IllegalStateException("não é Possivel Inicializar o GLFW");
         }
-
+        
         // Configure o GLFW
         glfwWindowHint(GLFW_DECORATED, GLFW_TRUE);
         glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
-
+        
         // Cria uma Janela
         window = glfwCreateWindow(800, 600, "ManoCraft", NULL, NULL);
-
+        
         // Verifique se a Janela foi Criada
         if(window == NULL)
         {
             throw new RuntimeException("Não foi Possivel Criar a Janela");
         }
-
+        
         // Torne o Contexto do OpenGL Atual
         glfwMakeContextCurrent(window);
-
+        
         // Habilita a Sincronização Vertical
         glfwSwapInterval(1);
-
+        
         // Torne a Janela Vísivel
         glfwShowWindow(window);
-
+        
         // Inicia o OpenGL
         GL.createCapabilities();
     }
@@ -93,7 +93,7 @@ public class Main
     {
         // Váriavel Principal para Chamar
         Main main = new Main();
-
+        
         // Chame a Função de Execução
         main.run();
     }
