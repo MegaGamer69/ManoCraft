@@ -1,7 +1,10 @@
 group "com.manocraft"
 version "0.0.1-T"
 
-project.ext.lwjglVersion "3.3.3"
+ext {
+	lwjglVersion = "3.3.3"
+	lwjglNatives = "natives-linux"
+}
 
 repositories {
 	mavenCentral()
