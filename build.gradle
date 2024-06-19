@@ -1,5 +1,7 @@
-project.ext.lwjglVersion = "3.3.3"
-project.ext.lwjglNatives = "natives-windows"
+group "com.manocraft"
+version "0.0.1-T"
+
+project.ext.lwjgl "3.3.3"
 
 repositories {
 	mavenCentral()
