@@ -85,11 +85,22 @@ public class Main
     // Chamado para Repetir Ações
     public void loop()
     {
-        // Vazio por Enquanto...
+        // Loop para Ações Contínuas
+        while(!glfwWindowShouldClose(window))
+        {
+            // Limpe os Buffers do GL
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+            // Troque os Buffers do GLFW
+            glfwSwapBuffers(window);
+
+            // Faça um Poll de Eventos do GLFW
+            glfwPollEvents();
+        }
     }
 
     // Função Estática para Ações Iniciais
-    public static void main()
+    public static void main(String[] args)
     {
         // Váriavel Principal para Chamar
         Main main = new Main();
