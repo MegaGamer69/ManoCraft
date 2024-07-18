@@ -26,6 +26,12 @@ public class Main
 {
     // o Manipulador da Janela
     private long window;
+
+    // Cria uma Nova Instância da Classe Principal
+    public Main()
+    {
+        // Nada por Aqui, por Enquanto
+    }
     
     // Chamado quando a Aplicação é Executada
     public void run()
@@ -61,11 +67,12 @@ public class Main
         glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
         
         // Cria uma Janela
-        window = glfwCreateWindow(800, 600, "ManoCraft", NULL, NULL);
+        window = glfwCreateWindow(800, 600, "ManoCraft", 0, 0);
         
         // Verifique se a Janela foi Criada
         if(window == NULL)
         {
+            // Lançar a Excessão se não Funcionar
             throw new RuntimeException("Não foi Possivel Criar a Janela");
         }
         
@@ -97,6 +104,8 @@ public class Main
             // Faça um Poll de Eventos do GLFW
             glfwPollEvents();
         }
+
+        GLFW.glfwTerminate();
     }
 
     // Função Estática para Ações Iniciais
