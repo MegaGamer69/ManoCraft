@@ -3,7 +3,7 @@ pluginManagement {
         gradlePluginPortal()
         maven { url = "https://mvnrepository.com/artifact/org.lwjgl/lwjgl" }
         maven {
-            name = "LWJGL"
+            name = "lwjgl"
             url = "https://mvnrepository.com/artifact/org.lwjgl/lwjgl"
         }
     }
