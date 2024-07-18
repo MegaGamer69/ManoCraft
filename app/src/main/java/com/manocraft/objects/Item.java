@@ -17,7 +17,11 @@ public class Item
     private String itemName;
     private Strind itemID;
 
-    // Cria uma Nova Intância do Item
+    /**
+     * Cria uma Nova Intância do Item
+     * @param name Define o Nome do Item
+     * @param identifier Define o Identificador Único do Item
+     */
     public Item(String name, String identifier)
     {
         // Defina os Valores
