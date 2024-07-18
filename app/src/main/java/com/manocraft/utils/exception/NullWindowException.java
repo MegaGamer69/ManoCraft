@@ -1,3 +1,4 @@
+// Pacote do Código
 package com.manocraft.utils.exception;
 
 // Importações Concretas Úteis do Java
