@@ -14,6 +14,9 @@ import org.lwjgl.system.*;
 // Importações Concretas Úteis do Java
 import java.nio.*;
 
+// Importações Concretas Úteis do ManoCraft
+import com.manocraft.utils.exception.NullWindowException;
+
 // Importações Estáticas Úteis do LWJGL
 import static org.lwjgl.glfw.GLFW.*;
 import static org.lwjgl.glfw.Callbacks.*;
@@ -73,7 +76,7 @@ public class Main
         if(window == NULL)
         {
             // Lançar a Excessão se não Funcionar
-            throw new RuntimeException("Não foi Possivel Criar a Janela");
+            throw new NullWindowException("Não foi Possivel Criar a Janela", null);
         }
         
         // Torne o Contexto do OpenGL Atual
