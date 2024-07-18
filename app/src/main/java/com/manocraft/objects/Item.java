@@ -20,6 +20,20 @@ public class Item
     // Cria uma Nova Intância do Item
     public Item(String name, String identifier)
     {
-        
+        // Defina os Valores
+        this.itemName = name;
+        this.itemID = identifier;
+    }
+
+    // Obtenha e Retorna o Nome
+    public void getItemName()
+    {
+        return itemName;
+    }
+
+    // Obtenha e Retorna o Identificador
+    public void getItemID()
+    {
+        return itemID;
     }
 }
