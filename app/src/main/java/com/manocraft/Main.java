@@ -114,7 +114,7 @@ public class Main
     // Função Estática para Ações Iniciais
     public static void main(String[] args)
     {
-        // Váriavel Principal para Chamar
+        // Váriavel Principal para Instância
         Main main = new Main();
         
         // Chame a Função de Execução
