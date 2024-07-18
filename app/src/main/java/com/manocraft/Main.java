@@ -76,7 +76,7 @@ public class Main
         glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
         
         // Cria uma Janela
-        window = glfwCreateWindow(800, 600, "ManoCraft", 0, 0);
+        window = glfwCreateWindow(800, 600, "ManoCraft", NULL, NULL);
         
         // Verifique se a Janela foi Criada
         if(window == NULL)
