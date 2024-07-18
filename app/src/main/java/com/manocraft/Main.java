@@ -39,17 +39,23 @@ public class Main
     // Chamado quando a Aplicação é Executada
     public void run()
     {
-        // Inicializa o Jogo
-        init();
-        loop();
+        // Tenta fazer o Jogo Funcionar
+        try
+        {
+            // Inicializa o Jogo
+            init();
+            loop();
+        }
+        finally
+        {
+            // Libera a Callback de Janela e Desintegra-a
+            glfwFreeCallbacks(window);
+            glfwDestroyWindow(window);
         
-        // Libera a Callback de Janela e Desintegra-a
-        glfwFreeCallbacks(window);
-        glfwDestroyWindow(window);
-    
-        // Termina o GLFW e Libera a Callback de Erro
-        glfwTerminate();
-        glfwSetErrorCallback(null).free();
+            // Termina o GLFW e Libera a Callback de Erro
+            glfwTerminate();
+            glfwSetErrorCallback(null).free();
+        }
     }
     
     // Chamado para Iniciar Ações
