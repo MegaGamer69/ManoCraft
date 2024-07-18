@@ -2,7 +2,7 @@
 package com.manocraft.utils;
 
 // Direitos Autorais:
-// @MegaGamer69
+// @MegaGamer69(Criador do Código Fonte)
 // 2024 ManoCraft
 
 // Importações Concretas Úteis do Java
