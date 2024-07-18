@@ -1,6 +1,10 @@
 // Pacote do Código
 package com.manocraft.utils.exception;
 
+// Direitos Autorais:
+// @MegaGamer69(Criador do Código Fonte)
+// 2024 ManoCraft
+
 // Importações Concretas Úteis do Java
 import java.lang.Exception;
 import java.lang.Throwable;
