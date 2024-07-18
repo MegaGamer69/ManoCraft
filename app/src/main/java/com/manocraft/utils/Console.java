@@ -1,5 +1,5 @@
 // Pacote do Código
-package com.manocraft;
+package com.manocraft.utils;
 
 // Direitos Autorais:
 // @MegaGamer69
@@ -29,12 +29,13 @@ public class Console
     // Define o Comando Atual
     public String command = "Console/> ";
     
-    // Cria uma nova Instância do Console
+    // Cria uma Nova Instância do Console
     public Console(long window, boolean visible)
     {
         // Verifica se o Manipulador da Janela está Nula
         if(window == 0)
         {
+            // Imprima uma Mensagem de Erro
             System.out.println("Não é Possivel usar o Console, o Manipulador da Janela não Está Definido");
         }
         
