@@ -82,7 +82,7 @@ public class Main
         if(window == NULL)
         {
             // Lançar a Excessão se não Funcionar
-            throw new NullWindowException("Não foi Possivel Criar a Janela", null);
+            System.out.println("Não foi Possível Iniciar a Janela");
         }
         
         // Torne o Contexto do OpenGL Atual
