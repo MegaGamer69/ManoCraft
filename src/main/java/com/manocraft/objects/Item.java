@@ -15,7 +15,7 @@ public class Item
 {
     // Váriaveis Úteis
     private String itemName;
-    private Strind itemID;
+    private String itemID;
 
     /**
      * Cria uma Nova Intância do Item
@@ -30,13 +30,13 @@ public class Item
     }
 
     // Obtenha e Retorna o Nome
-    public void getItemName()
+    public String getItemName()
     {
         return itemName;
     }
 
     // Obtenha e Retorna o Identificador
-    public void getItemID()
+    public String getItemID()
     {
         return itemID;
     }

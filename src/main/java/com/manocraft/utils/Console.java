@@ -50,7 +50,7 @@ public class Console
         System.out.print(message);
 
         // Coloque a Mensagem no Histórico
-        MessageHistory.add(message);
+        messageHistory.add(message);
         
         // Esvazie a Entrada de Comando
         this.command = "Console/> ";
