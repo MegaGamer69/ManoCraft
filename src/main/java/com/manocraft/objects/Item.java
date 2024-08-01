@@ -16,7 +16,7 @@ public class Item
     // Váriaveis Úteis
     private String itemName;
     private String itemID;
-
+    
     /**
      * Cria uma Nova Intância do Item
      * @param name Define o Nome do Item
@@ -28,13 +28,13 @@ public class Item
         this.itemName = name;
         this.itemID = identifier;
     }
-
+    
     // Obtenha e Retorna o Nome
     public String getItemName()
     {
         return itemName;
     }
-
+    
     // Obtenha e Retorna o Identificador
     public String getItemID()
     {

@@ -42,7 +42,7 @@ public class Console
         // Defina a Visibilidade pelo Construtor
         this.visibility = visible;
     }
-
+    
     // Escreve a Mensagem
     public void write(String message)
     {
