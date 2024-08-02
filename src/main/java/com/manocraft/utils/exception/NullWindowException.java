@@ -12,7 +12,7 @@ import java.lang.Throwable;
 // Usada para Casos da Janela(Criada apartir do GLFW) não pode ser Criada
 public class NullWindowException extends Exception
 {
-    // Cria uma Nova Instância para a Classe
+    // Cria uma Nova Instância para a Classe(1)
     public NullWindowException(String message, Throwable cause)
     {
         // Chama o Construtor da Superclasse
