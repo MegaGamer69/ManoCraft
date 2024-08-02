@@ -46,6 +46,11 @@ public class Main
             init();
             loop();
         }
+        catch(IOException exception)
+        {
+            // Imprima uma Mensagem de Erro
+            System.out.println("uma Excessão Ocorreu" + exception);
+        }
         finally
         {
             // Libera a Callback de Janela e Desintegra-a
@@ -67,7 +72,7 @@ public class Main
         // Verifica se a Inicialização do GLFW Funcionou ou não
         if(!glfwInit())
         {
-            // Lance uma Excessão se não Funcionou
+            // Lance uma Exceção se não Funcionou
             throw new IllegalStateException("não é Possivel Inicializar o GLFW");
         }
         
@@ -81,7 +86,7 @@ public class Main
         // Verifique se a Janela foi Criada
         if(window == NULL)
         {
-            // Lançar a Excessão se não Funcionar
+            // Lançar a Exceção se não Funcionar
             System.out.println("Não foi Possível Iniciar a Janela");
         }
         
@@ -113,8 +118,6 @@ public class Main
             // Faça um Poll de Eventos do GLFW
             glfwPollEvents();
         }
-
-        GLFW.glfwTerminate();
     }
 
     // Função Estática para Ações Iniciais
