@@ -86,8 +86,8 @@ public class Main
         // Verifique se a Janela foi Criada
         if(window == NULL)
         {
-            // Lançar a Exceção se não Funcionar
-            System.out.println("Não foi Possível Iniciar a Janela");
+            // Lance uma Exceção
+            throw new NullWindowException("Não pode Criar uma Janela devido uma Exceção", new Throwable("o Manipulador da Janela não pode ser Nula"));
         }
         
         // Torne o Contexto do OpenGL Atual
