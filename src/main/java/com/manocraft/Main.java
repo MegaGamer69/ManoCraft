@@ -89,7 +89,7 @@ public class Main
         if(window == NULL)
         {
             // Lance a Exceção
-            throw new RuntimeException("Exceção Capturada", "a Janela não pode ser Nula");
+            throw new RuntimeException("Exceção Capturada", new Throwable("a Janela não pode ser Nula"));
         }
         
         // Torne o Contexto do OpenGL Atual
