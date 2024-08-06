@@ -50,7 +50,7 @@ public class Main
         catch(IOException exception)
         {
             // Imprima uma Mensagem de Erro
-            System.err.println("uma Excessão Ocorreu" + exception);
+            System.err.println("Excessão Capturada" + exception.getMessage());
             exception.printStackTrace();
         }
         finally
@@ -89,7 +89,7 @@ public class Main
         if(window == NULL)
         {
             // Lance a Exceção
-            throw new Runtime
+            throw new RuntimeException("Exceção Capturada", "a Janela não pode ser Nula");
         }
         
         // Torne o Contexto do OpenGL Atual
