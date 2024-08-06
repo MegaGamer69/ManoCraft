@@ -81,13 +81,14 @@ public class Main
         glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
         
         // Cria uma Janela
-        window = glfwCreateWindow(800, 600, "ManoCraft", NULL, NULL);
-        
-        // Verifique se a Janela foi Criada
-        if(window == NULL)
+        try
         {
-            // Lance uma Exceção
-            throw new NullWindowException("Não pode Criar uma Janela devido uma Exceção", new Throwable("o Manipulador da Janela não pode ser Nula"));
+            window = glfwCreateWindow(800, 600, "ManoCraft", NULL, NULL);
+        }
+        catch(NullWindowException exception)
+        {
+            // Lance a Exceção
+            throw exception;
         }
         
         // Torne o Contexto do OpenGL Atual
