@@ -12,7 +12,7 @@ import org.lwjgl.opengl.*;
 import org.lwjgl.system.*;
 
 // Importações Concretas Úteis do Java
-import java.nio.*;
+import java.io.IOException;
 
 // Importações Concretas Úteis do ManoCraft
 import com.manocraft.utils.exception.NullWindowException;
