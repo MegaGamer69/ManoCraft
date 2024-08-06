@@ -50,7 +50,7 @@ public class Main
         catch(IOException exception)
         {
             // Imprima uma Mensagem de Erro
-            System.out.println("uma Excessão Ocorreu" + exception);
+            System.err.println("uma Excessão Ocorreu" + exception);
             exception.printStackTrace();
         }
         finally
