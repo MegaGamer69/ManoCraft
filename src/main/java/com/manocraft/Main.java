@@ -51,7 +51,7 @@ public class Main
         catch(IOException exception)
         {
             // Imprima uma Mensagem de Erro
-            System.err.println("Excessão Capturada" + exception.getMessage());
+            System.err.println("Excessão Capturada(IOException)");
             exception.printStackTrace();
         }
         finally
@@ -90,7 +90,7 @@ public class Main
         if(window == NULL)
         {
             // Lance a Exceção
-            throw new RuntimeException("Exceção Capturada", new Throwable());
+            throw new RuntimeException("Exceção Capturada(Runtime Exception)");
         }
         
         // Torne o Contexto do OpenGL Atual
