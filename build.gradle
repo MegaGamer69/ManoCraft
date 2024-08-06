@@ -1,4 +1,4 @@
-plugins {
+6[plugins {
 	id 'java'
 	id 'application'
 	id 'com.github.johnrengelman.shadow' version '7.1.0'
@@ -37,11 +37,6 @@ dependencies {
 
 application {
 	mainClassName = 'com.manocraft.Main'
-}
-
-task.run(type: JavaExec) {
-	main = 'com.manocraft.Main'
-	classpath = sourceSets.main.runtimeClasspath
 }
 
 jar {
