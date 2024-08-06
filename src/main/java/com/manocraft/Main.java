@@ -14,6 +14,7 @@ import org.lwjgl.system.*;
 // Importações Concretas Úteis do Java
 import java.io.IOException;
 import java.lang.RuntimeException;
+import java.lang.Throwable;
 
 // Importações Concretas Úteis do ManoCraft
 import com.manocraft.utils.exception.NullWindowException;
