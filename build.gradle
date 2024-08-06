@@ -1,11 +1,10 @@
 plugins {
-	id 'java'
-	id 'application'
-	id 'com.github.johnrengelman.shadow' version '7.1.0'
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.0'
 }
 
 repositories {
-	mavenCentral()
+    mavenCentral()
 }
 
 shadowJar {
@@ -19,31 +18,25 @@ shadowJar {
 }
 
 dependencies {
-	implementation platform('org.lwjgl:lwjgl-bom:3.3.4')
+    implementation platform('org.lwjgl:lwjgl-bom:3.3.4')
 
-	implementation 'org.lwjgl:lwjgl'
-	implementation 'org.lwjgl:lwjgl-assimp'
-	implementation 'org.lwjgl:lwjgl-glfw'
-	implementation 'org.lwjgl:lwjgl-openal'
-	implementation 'org.lwjgl:lwjgl-opengl'
-	implementation 'org.lwjgl:lwjgl-stb'
-	runtimeOnly 'org.lwjgl:lwjgl::natives-linux'
-	runtimeOnly 'org.lwjgl:lwjgl-assimp::natives-linux'
-	runtimeOnly 'org.lwjgl:lwjgl-glfw::natives-linux'
-	runtimeOnly 'org.lwjgl:lwjgl-openal::natives-linux'
-	runtimeOnly 'org.lwjgl:lwjgl-opengl::natives-linux'
-	runtimeOnly 'org.lwjgl:lwjgl-stb::natives-linux'
+    implementation 'org.lwjgl:lwjgl'
+    implementation 'org.lwjgl:lwjgl-assimp'
+    implementation 'org.lwjgl:lwjgl-glfw'
+    implementation 'org.lwjgl:lwjgl-openal'
+    implementation 'org.lwjgl:lwjgl-opengl'
+    implementation 'org.lwjgl:lwjgl-stb'
+    runtimeOnly 'org.lwjgl:lwjgl::natives-linux'
+    runtimeOnly 'org.lwjgl:lwjgl-assimp::natives-linux'
+    runtimeOnly 'org.lwjgl:lwjgl-glfw::natives-linux'
+    runtimeOnly 'org.lwjgl:lwjgl-openal::natives-linux'
+    runtimeOnly 'org.lwjgl:lwjgl-opengl::natives-linux'
+    runtimeOnly 'org.lwjgl:lwjgl-stb::natives-linux'
 }
 
 application {
-	mainClassName = 'com.manocraft.Main'
+    mainClassName = 'com.manocraft.Main'
 }
-
-task.run(type: JavaExec) {
-	main = 'com.manocraft.Main'
-	classpath = sourceSets.main.runtimeClasspath
-}
-
 jar {
     manifest {
         attributes 'Main-Class': 'com.manocraft.Main'
