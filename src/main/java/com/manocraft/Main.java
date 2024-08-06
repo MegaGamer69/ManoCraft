@@ -13,6 +13,7 @@ import org.lwjgl.system.*;
 
 // Importações Concretas Úteis do Java
 import java.io.IOException;
+import java.io.RuntimeException;
 
 // Importações Concretas Úteis do ManoCraft
 import com.manocraft.utils.exception.NullWindowException;
@@ -50,6 +51,7 @@ public class Main
         {
             // Imprima uma Mensagem de Erro
             System.out.println("uma Excessão Ocorreu" + exception);
+            exception.printStackTrace();
         }
         finally
         {
@@ -81,14 +83,13 @@ public class Main
         glfwWindowHint(GLFW_RESIZABLE, GLFW_FALSE);
         
         // Cria uma Janela
-        try
-        {
-            window = glfwCreateWindow(800, 600, "ManoCraft", NULL, NULL);
-        }
-        catch(NullWindowException exception)
+        window = glfwCreateWindow(800, 600, "ManoCraft", NULL, NULL);
+
+        // Verifica se a Janela está Nula
+        if(window == NULL)
         {
             // Lance a Exceção
-            throw exception;
+            throw new Runtime
         }
         
         // Torne o Contexto do OpenGL Atual
