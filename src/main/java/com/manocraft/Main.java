@@ -12,7 +12,7 @@ import org.lwjgl.opengl.*;
 import org.lwjgl.system.*;
 
 // Importações Concretas Úteis do Java
-import java.io.IOException;
+import java.lang.Exception;
 import java.lang.RuntimeException;
 import java.lang.Throwable;
 
@@ -48,10 +48,10 @@ public class Main
             init();
             loop();
         }
-        catch(IOException exception)
+        catch(Exception exception)
         {
             // Imprima uma Mensagem de Erro
-            System.err.println("Excessão Capturada(IOException)");
+            System.err.println("Excessão Capturada(Linha 54)");
             exception.printStackTrace();
         }
         finally
@@ -90,7 +90,7 @@ public class Main
         if(window == NULL)
         {
             // Lance a Exceção
-            throw new RuntimeException("Exceção Capturada(Runtime Exception)");
+            throw new RuntimeException("Exceção Capturada(Linha 93)");
         }
         
         // Torne o Contexto do OpenGL Atual
