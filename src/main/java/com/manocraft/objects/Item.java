@@ -2,7 +2,7 @@
 package com.manocraft.objects;
 
 // Direitos Autorais:
-// MegaGamer69(Criador do Código Fonte)
+// @MegaGamer69(Criador do Código Fonte)
 // 2024 ManoCraft
 
 // Importações Estáticas Úteis do LWJGL
