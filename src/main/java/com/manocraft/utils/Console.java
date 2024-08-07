@@ -10,6 +10,7 @@ import java.lang.Thread;
 import java.lang.Object;
 import java.lang.String;
 import java.lang.List;
+import java.util.ArrayList;
 
 // Classe Responsável pelo Registro do Log
 public class Console extends Object
@@ -30,6 +31,6 @@ public class Console extends Object
     }
 
     public static List<String> getMessage(int index){
-        return 
+        return msgHistory.get(index);
     }
 }

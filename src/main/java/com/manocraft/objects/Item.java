@@ -14,27 +14,18 @@ import static org.lwjgl.glfw.Callbacks.*;
 public class Item
 {
     // Váriaveis Úteis
-    private String itemName;
     private String itemID;
     
     /**
      *  Cria uma Nova Intância do Item
-     *  @param name Define o Nome do Item
      *  @param identifier Define o Identificador Único do Item
      */
-    public Item(String name, String identifier)
+    public Item(String identifier)
     {
         // Defina os Valores
-        this.itemName = name;
         this.itemID = identifier;
     }
-    
-    // Obtenha e Retorna o Nome
-    public String getItemName()
-    {
-        return itemName;
-    }
-    
+
     // Obtenha e Retorna o Identificador
     public String getItemID()
     {

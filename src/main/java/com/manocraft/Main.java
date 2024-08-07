@@ -15,9 +15,12 @@ import org.lwjgl.system.*;
 import java.lang.Exception;
 import java.lang.RuntimeException;
 import java.lang.Throwable;
+import java.lang.List;
+import java.util.ArrayList;
 
 // Importações Concretas Úteis do ManoCraft
 import com.manocraft.utils.exception.NullWindowException;
+import com.manocraft.objects.Item;
 
 // Importações Estáticas Úteis do LWJGL
 import static org.lwjgl.glfw.GLFW.*;
@@ -31,6 +34,9 @@ public class Main
 {
     // o Manipulador da Janela
     private long window;
+
+    // a Lista de Item
+    private List<Item> items = new ArrayList<Item>();
 
     // Cria uma Nova Instância da Classe Principal
     public Main()
@@ -59,7 +65,7 @@ public class Main
             // Libera a Callback de Janela e Desintegra-a
             glfwFreeCallbacks(window);
             glfwDestroyWindow(window);
-        
+
             // Termina o GLFW e Libera a Callback de Erro
             glfwTerminate();
             glfwSetErrorCallback(null).free();
@@ -71,6 +77,14 @@ public class Main
     {
         // Defina a Callback de Erro
         GLFWErrorCallback.createPrint(System.err).set();
+
+        // Limpe a Memória RAM Antes de Inicializar
+        items.clear();
+
+        // Inicializa os Itens da Lista
+        items.add(new Item("Obj_Placer"));
+        items.add(new Item("SDebug_Gun"));
+        items.add(new Item("HDebug_Gun"));
         
         // Verifica se a Inicialização do GLFW Funcionou ou não
         if(!glfwInit())
