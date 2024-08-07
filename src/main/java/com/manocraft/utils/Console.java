@@ -30,7 +30,7 @@ public class Console
         msgHistory.add(output);
     }
 
-    public static List<String> getMessage(int index){
+    public static String getMessage(int index){
         return msgHistory.get(index);
     }
 }
