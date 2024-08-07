@@ -15,7 +15,7 @@ import org.lwjgl.system.*;
 import java.lang.Exception;
 import java.lang.RuntimeException;
 import java.lang.Throwable;
-import java.lang.List;
+import java.util.List;
 import java.util.ArrayList;
 
 // Importações Concretas Úteis do ManoCraft
