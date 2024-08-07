@@ -16,7 +16,7 @@ import java.util.ArrayList;
 public class Console extends Object
 {
     // Histórico de Mensagens
-    private List<String> msgHistory = new ArrayList<String>();
+    private static List<String> msgHistory = new ArrayList<String>();
 
     // Construtor Privado(NÃO PODE SER CHAMADO EM HIPÓTESE ALGUMA)
     private Console()
