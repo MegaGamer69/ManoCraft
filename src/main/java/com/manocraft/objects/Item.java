@@ -18,9 +18,9 @@ public class Item
     private String itemID;
     
     /**
-     * Cria uma Nova Intância do Item
-     * @param name Define o Nome do Item
-     * @param identifier Define o Identificador Único do Item
+     *  Cria uma Nova Intância do Item
+     *  @param name Define o Nome do Item
+     *  @param identifier Define o Identificador Único do Item
      */
     public Item(String name, String identifier)
     {
