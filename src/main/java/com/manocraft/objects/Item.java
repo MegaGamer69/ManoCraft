@@ -1,4 +1,4 @@
-// o Pacote do Código
+// Pacote do Código
 package com.manocraft.objects;
 
 // Direitos Autorais:
