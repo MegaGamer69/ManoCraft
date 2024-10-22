@@ -24,3 +24,8 @@ jobs:
         with:
           name: ManoCraft_Build
           path: "build/libs/ManoCraft.jar"
+      - name: Upload Repository
+        uses: actions/upload-artifact@v4.3.3
+        with:
+          name: ManoCraft_Source
+          path: "."
