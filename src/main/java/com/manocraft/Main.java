@@ -16,7 +16,7 @@ import java.lang.Exception;
 import java.lang.RuntimeException;
 import java.lang.Throwable;
 import java.util.List;
-import java.util.ArrayList;
+import java.util.LinkedList;
 
 // Importações Concretas Úteis do ManoCraft
 import com.manocraft.utils.exception.NullWindowException;
@@ -36,7 +36,7 @@ public class Main
     private long window;
 
     // a Lista de Item
-    private List<Item> items = new ArrayList<Item>();
+    private List<Item> items = new LinkedList<Item>();
 
     // Cria uma Nova Instância da Classe Principal
     public Main()
@@ -57,7 +57,7 @@ public class Main
         catch(Exception exception)
         {
             // Imprima uma Mensagem de Erro
-            System.err.println("Excessão Capturada(Linha 54)");
+            System.err.println("Excessão Capturada!");
             exception.printStackTrace();
         }
         finally
@@ -127,7 +127,7 @@ public class Main
         while(!glfwWindowShouldClose(window))
         {
             // Limpe os Buffers do GL
-            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+            glClear(GL_COLOR_BUFFER_BIT || GL_DEPTH_BUFFER_BIT);
 
             // Troque os Buffers do GLFW
             glfwSwapBuffers(window);
