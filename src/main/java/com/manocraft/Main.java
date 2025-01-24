@@ -127,7 +127,7 @@ public class Main
         while(!glfwWindowShouldClose(window))
         {
             // Limpe os Buffers do GL
-            glClear(GL_COLOR_BUFFER_BIT || GL_DEPTH_BUFFER_BIT);
+            glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
             // Troque os Buffers do GLFW
             glfwSwapBuffers(window);
